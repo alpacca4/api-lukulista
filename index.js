@@ -7,15 +7,16 @@ function arvoNumero(alaraja, ylaraja) {
     return Math.floor(ylaraja * Math.random()) + alaraja
 }
 
-let NUMEROLISTA = [
-        arvonumero(0.5)
-        arvonumero(10.15)
-        arvonumero(100.500)
-        arvonumero(10.20)
+app.get('/',function (req, res) {
+    let numerolista = [
+        arvonumero(0.5),
+        arvonumero(10.15),
+        arvonumero(100.500),
+        arvonumero(10.20),
         arvonumero(0.5)
       ]
-app.get('/',function (req, res) {
-  res.send(NUMEROLISTA)
+
+  res.json(numerolista)
 })
 
 app.listen(PORT)
