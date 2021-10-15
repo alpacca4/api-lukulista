@@ -4,8 +4,10 @@ const PORT = process.env.PORT || 5000
 const app =  express()
 
 function arvoNumero(alaraja, ylaraja) {
-    return Math.floor((ylaraja * Math.random()) + alaraja
+    return Math.floor(ylaraja * Math.random()) + alaraja
 }
+
+
 
 
 
